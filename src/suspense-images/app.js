@@ -18,7 +18,7 @@ const Placeholder = props => {
 
 export default class SuspenseImages extends Component {
   state = {
-    repo: 'spectacle',
+    repo: 'astaria-website',
   };
   updateRepo = e => {
     ReactDOM.unstable_deferredUpdates(() => {
@@ -30,12 +30,11 @@ export default class SuspenseImages extends Component {
   render() {
     return (
       <Container>
-        <H1>People I've Let Down</H1>
+        <H1>How many collaborators don't I have?</H1>
         <Select name="text" onChange={this.updateRepo} value={this.state.repo}>
-          <option value="spectacle">Spectacle</option>
-          <option value="urql">Urql</option>
-          <option value="webpack-dashboard">Webpack Dashboard</option>
-          <option value="nuka-carousel">Nuka Carousel</option>
+          <option value="astaria-website">astaria-website</option>
+          <option value="amp-letter.github.io">amp-letter.github.io</option>
+          <option value="stampit">stampit</option>
         </Select>
         <Placeholder>
           <Images repo={this.state.repo} />

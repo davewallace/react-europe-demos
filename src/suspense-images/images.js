@@ -41,7 +41,7 @@ const Placeholder = props => {
 
 const imageQuery = `
 query($name: String!) {
-  repository(name: $name owner: "FormidableLabs") {
+  repository(name: $name owner: "davewallace") {
    collaborators(first: 20){
      nodes {
        avatarUrl(size: 150),
